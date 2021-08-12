@@ -1,0 +1,58 @@
+.show {
+  animation: show-item 3s linear forwards;
+}
+.hidden { 
+  animation: hidden-item 2s ease-in forwards;
+}
+@keyframes hidden-item {
+  0% {
+    opacity: 1;
+    color: aqua;
+  }
+  50% {
+    opacity: 0.5;
+    color: blueviolet;
+  }
+  100% {
+    opacity: 1;
+    color: lime;
+  }
+}
+
+@keyframes show-item {
+  0% {
+    opacity: 0;
+    color: mediumaquamarine;
+  }
+  40% {
+    opacity: .4;
+    color: pink;
+
+  }
+  100% {
+    opacity: 1;
+    color: mediumblue;
+  }
+}
+
+.boss-text-enter {
+  opacity: 0;
+}
+.boss-text-enter-active {
+  opacity: 1;
+  transition: opacity 2000ms;
+}
+.boss-text-enter-done {
+  opacity: 1;
+}
+
+.boss-text-exit {
+  opacity: 1;
+}
+.boss-text-exit-active {
+  opacity: 0;
+  transition: opacity 3000ms;
+}
+.boss-text-exit-done {
+  opacity: 0;
+}
